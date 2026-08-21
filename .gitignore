@@ -1,0 +1,51 @@
+# === Ambiente virtual ===
+.venv/
+venv/
+env/
+.env
+
+# === uv ===
+uv.lock
+
+# === Testes ===
+tests/
+test_*.py
+testar_*.py
+testar_*.sh
+
+# === Variáveis de ambiente (nunca versionar) ===
+.env
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# === Pytest / cobertura ===
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# === IDEs ===
+.vscode/
+.idea/
+*.iml
+
+# === Logs ===
+*.log
+app.log
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === Docker ===
+docker-compose.override.yml
