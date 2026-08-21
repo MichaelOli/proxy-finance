@@ -8,7 +8,7 @@ class Settings(BaseSettings):
 
     # === ROOT PATH ===
     root_path: str = "/api/v1/proxy-finance"
-    http_port: int = 8001
+    http_port: int = 8000
 
     # === IDENTIFICACAO DE BANCO ===
     logo_hash_threshold: int = 10
