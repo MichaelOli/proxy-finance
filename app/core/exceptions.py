@@ -40,7 +40,9 @@ class ParsingError(Exception):
         )
 
 
-class OcrProcessingError(Exception):
+class ExtractionError(Exception):
+    """Erro na extracao de texto do documento."""
+
     def __init__(self, task_id: str, message: str) -> None:
         self.task_id = task_id
-        super().__init__(f"Erro na extração de texto do PDF. task_id={task_id} — {message}")
+        super().__init__(f"Erro na extracao de texto do PDF. task_id={task_id} - {message}")
